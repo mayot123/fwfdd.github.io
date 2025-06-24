@@ -113,10 +113,6 @@ send.onclick = () => {
      data.innerHTML += "<br>Google Pixel 6 -" + products["phone6"] + "шт"}
 }
 let btn_confirm = document.querySelector("#confirm")
-btn_confirm.onclick = () => {
-       tg.MainButton.setText("Вы точно хотите отправить данные?")
-       tg.MainButton.show()
-}
 Telegram.WebApp.onEvent("mainButtonClicked",function(){
      var finalresult = "Ваши данные: <br>Ваше имя -" + name.value
      finalresult += "<br>Ваш номер -" + number.value
@@ -137,3 +133,7 @@ Telegram.WebApp.onEvent("mainButtonClicked",function(){
      tg.sendData(finalresult)
      tg.MainButton.hide()
 })
+btn_confirm.onclick = () => {
+       tg.MainButton.setText("Вы точно хотите отправить данные?")
+       tg.MainButton.show()
+}
