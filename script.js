@@ -117,7 +117,7 @@ btn_confirm.onclick = () => {
        tg.MainButton.setText("Вы точно хотите отправить данные?")
        tg.MainButton.show()
 }
-tg.onEvent("mainButtonClicked",function(){
+Telegram.WebApp.onEvent("mainButtonClicked",function(){
      var finalresult = "Ваши данные: <br>Ваше имя -" + name.value
      finalresult += "<br>Ваш номер -" + number.value
      finalresult += "<br>Вашa почта -" + mail.value
