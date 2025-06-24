@@ -98,7 +98,7 @@ send.onclick = () => {
      data.innerHTML = "Ваши данные: <br>Ваше имя -" + name.value
      data.innerHTML += "<br>Ваш номер -" + number.value
      data.innerHTML += "<br>Вашa почта -" + mail.value
-     data.innerHTML += "<br>Ваш заказ -"
+     data.innerHTML += "<br>Ваш заказ:"
      if (products["phone12"]>0){
      data.innerHTML += "<br>Iphone 12 -" + products["phone12"] + "шт"}
      if (products["phone13"]>0){
