@@ -135,4 +135,5 @@ Telegram.WebApp.onEvent("mainButtonClicked",function(){
      if (products["phone6"]>0){
      finalresult += "<br>Google Pixel 6 -" + products["phone6"] + "шт"}
      tg.sendData(finalresult)
+     tg.MainButton.hide()
 })
