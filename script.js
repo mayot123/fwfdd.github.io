@@ -112,3 +112,27 @@ send.onclick = () => {
      if (products["phone6"]>0){
      data.innerHTML += "<br>Google Pixel 6 -" + products["phone6"] + "шт"}
 }
+let btn_confirm = document.querySelector("#confirm")
+btn_confirm.onclick = () => {
+       tg.MainButton.setText("Вы точно хотите отправить данные?")
+       tg.MainButton.show()
+}
+tg.onEvent("mainButtonClicked",function(){
+     var finalresult = "Ваши данные: <br>Ваше имя -" + name.value
+     finalresult += "<br>Ваш номер -" + number.value
+     finalresult += "<br>Вашa почта -" + mail.value
+     finalresult += "<br>Ваш заказ:"
+     if (products["phone12"]>0){
+     finalresult += "<br>Iphone 12 -" + products["phone12"] + "шт"}
+     if (products["phone13"]>0){
+     finalresult += "<br>Iphone 13 -" + products["phone13"] + "шт"}
+      if (products["phone14"]>0){
+     finalresult += "<br>Iphone 14 -" + products["phone14"] + "шт"}
+     if (products["phone15"]>0){
+     finalresult += "<br>Iphone 15 -" + products["phone15"] + "шт"}
+      if (products["phone16"]>0){
+     finalresult += "<br>Iphone 16 -" + products["phone16"] + "шт"}
+     if (products["phone6"]>0){
+     finalresult += "<br>Google Pixel 6 -" + products["phone6"] + "шт"}
+     tg.sendData(finalresult)
+})
