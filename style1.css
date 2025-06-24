@@ -1,17 +1,4 @@
-body{
-     max-width:450px;
-     background-color: grey;
 
-}
-.phone {
-        width:150px;
-        margin-bottom: 20px;
-}
-.inner {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows:400px 400px;
-}
 body {
     max-width: 390px;
     background-color: #f0f0f0;
